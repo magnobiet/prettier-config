@@ -1,22 +1,31 @@
 {
   "name": "@magno/prettier-config",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An Prettier shareable config",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./tailwind": "./tailwind.js"
+  },
   "homepage": "https://github.com/magnobiet/prettier-config#readme",
   "bugs": "https://github.com/magnobiet/prettier-config/issues",
   "keywords": [
     "prettier",
     "prettier-config",
-    "prettier-shareable-config"
+    "prettier-shareable-config",
+    "prettier-tailwindcss"
   ],
   "author": "Magno Fernando Brixner Biét <magno.biet@gmail.com> (https://magnobiet.com/)",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
-    "prettier": ">=2.6.0",
-    "prettier-plugin-tailwindcss": "^0.3.0"
+    "prettier": ">=3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
   },
   "peerDependencies": {
-    "prettier": ">=2.6.0",
-    "prettier-plugin-tailwindcss": ">=0.3.0"
+    "prettier": ">=3.3.3",
+    "prettier-plugin-tailwindcss": ">=0.6.8"
   }
 }
