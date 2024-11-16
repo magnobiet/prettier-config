@@ -9,6 +9,9 @@ npm install prettier @magno/prettier-config --save-dev
 
 # or using Yarn
 yarn add prettier @magno/prettier-config --dev
+
+# or using PNPM
+pnpm add prettier @magno/prettier-config --save-dev
 ```
 
 ## Usage
@@ -17,7 +20,7 @@ Create a `prettier.config.js` file in your root project directory and extend the
 
 ```js
 module.exports = {
-  ...require("@magno/prettier-config"),
+  ...require('@magno/prettier-config'),
   endOfLine: 'lf', // to overwrite the default value
 };
 ```
@@ -32,7 +35,7 @@ Or, just add the following line to your `package.json` file:
 
 ```js
 module.exports = {
-  ...require("@magno/prettier-config/tailwind"),
+  ...require('@magno/prettier-config/tailwind'),
 };
 ```
 
